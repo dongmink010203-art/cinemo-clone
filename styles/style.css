@@ -1,3 +1,189 @@
+
+/* 공통 기본 스타일 시작 - 조영서 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #101113;
+  color: #f3f1ed;
+  font-family: "Noto Sans KR", Arial, sans-serif;
+}
+/* 공통 기본 스타일 끝 - 조영서 */
+
+/* 마이페이지 상단 시작 - 조영서 */
+.mypage-top {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 64px;
+}
+
+.mypage-label {
+  margin: 0 0 8px;
+  color: #f28d77;
+  font-size: 12px;
+}
+
+.mypage-title {
+  margin: 0 0 12px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.mypage-description {
+  margin: 0;
+  color: #acaeb3;
+  font-size: 16px;
+  line-height: 1.8;
+}
+/* 마이페이지 상단 끝 - 조영서 */
+/* 욜로 프로필 시작 - 조영서 */
+.mypage-profile {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 48px;
+  padding: 32px;
+  background-color: #1a1c1f;
+  border-radius: 4px;
+}
+
+.mypage-profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 8px;
+  background-color: #789599;
+  color: #f3f1ed;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.mypage-profile-info {
+  min-width: 0;
+}
+
+.mypage-profile-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.mypage-profile-badge {
+  color: #f28d77;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mypage-profile-description {
+  margin: 0 0 6px;
+  color: #acaeb3;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mypage-profile-date {
+  margin: 0;
+  color: #acaeb3;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mypage-profile-link {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 12px 20px;
+  border: 1px solid #303237;
+  border-radius: 4px;
+  color: #f3f1ed;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mypage-profile-link:hover {
+  border-color: #f28d77;
+}
+
+.mypage-profile-link:focus-visible {
+  outline: 2px solid #f28d77;
+  outline-offset: 4px;
+}
+/* 욜로 프로필 끝 - 조영서 */
+/* 공통 헤더 시작 - 조영서 */
+.site-header {
+  background-color: #101113;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 28px 64px;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #f3f1ed;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-logo-mark {
+  width: 6px;
+  height: 22px;
+  background-color: #f28d77;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.site-nav-link {
+  color: #acaeb3;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.site-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  color: #f28d77;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.site-profile-avatar {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.site-header a:focus-visible {
+  outline: 2px solid #f28d77;
+  outline-offset: 4px;
+}
+/* 공통 헤더 끝 - 조영서 */
+
 /*--- 윤지빈 콘텐츠카드 시작---*/
 /* ===== 섹션 ===== */
 .content-card {
@@ -90,3 +276,172 @@
   }
 }
 /*--- 윤지빈 콘텐츠카드 끝---*/
+
+/* 프로필 선택 화면 시작 - 김어진 */
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 116px 64px 120px 64px;
+}
+
+/* 프로필 인트로 시작 - 김어진 */
+
+.profile-intro {
+  text-align: center;
+}
+
+.profile-intro-top {
+  color: #f28d77;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+}
+
+.profile-intro-middle {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.profile-intro-bottom {
+  color: #acaeb3;
+  font-size: 15px;
+}
+
+/* 프로필 인트로 끝 - 김어진 */
+/* 프로필 선택 리스트 끝 */
+
+.profile-selection {
+  margin: 56px auto;
+}
+
+.profile-list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
+}
+
+.image-profile {
+  width: 152px;
+  height: 152px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+#yolo {
+  background-color: #718c91;
+}
+
+#jiho {
+  background-color: #c0a57e;
+}
+
+#min {
+  background-color: #9593ad;
+}
+
+#guest {
+  background-color: #7b8c75;
+}
+
+.circle {
+  position: absolute;
+  border: 1px solid #f3f1ed;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.circle-top {
+  opacity: 31.37%;
+  width: 121.6px;
+  height: 121.6px;
+  top: -32px;
+  left: 73px;
+}
+
+.circle-bottom {
+  width: 174.8px;
+  height: 174.8px;
+  top: 75px;
+  left: -52px;
+  border-color: #101113;
+  opacity: 18.82%;
+}
+
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 118px;
+  left: 118px;
+  background-color: #24272d;
+  border-radius: 50%;
+}
+
+.profile-initials {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72.96px;
+  z-index: 1;
+}
+
+.profile-info {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: medium;
+}
+
+.profile-bio {
+  font-size: 11px;
+  color: #acaeb3;
+}
+
+/* 프로필 선택 리스트 끝 */
+/* 프로필 관리 버튼 시작 */
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 24px;
+  gap: 8px;
+  border: 1px solid #303237;
+  border-radius: 4px;
+}
+
+.icon-profile-button {
+  background-image: url("../assets/images/pen.svg");
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text-profile-button {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 프로필 관리 버튼 끝 */
+/* 프로필 푸터 시작 */
+footer {
+  color: #7e8289;
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+/* 프로필 푸터 끝 */
+/* 프로필 선택 화면 끝 */
