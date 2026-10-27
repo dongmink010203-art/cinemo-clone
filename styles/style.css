@@ -19,10 +19,10 @@ body {
 .site-header-inner {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 32px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 28px 64px;
+  padding: 24px 32px;
 }
 
 .site-logo {
@@ -46,12 +46,14 @@ body {
   display: flex;
   align-items: center;
   gap: 32px;
+  white-space: nowrap;
 }
 
 .site-nav-link {
   color: #acaeb3;
   font-size: 14px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .site-profile {
@@ -62,6 +64,7 @@ body {
   color: #f28d77;
   font-size: 14px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .site-profile-avatar {
@@ -191,112 +194,107 @@ body {
 /* 욜로 프로필 끝 - 조영서 */
 
 /* 모바일 화면 시작 - 조영서 */
-@media (max-width: 768px) {
-  /* 모바일 헤더 */
-  .site-header {
-    border-bottom: 1px solid #303237;
-  }
 
-  .site-header-inner {
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 24px;
-  }
-
-  .site-logo {
-    font-size: 20px;
-  }
-
-  .site-logo-mark {
-    width: 5px;
-    height: 18px;
-  }
-
-  .site-profile {
-    margin-left: auto;
-  }
-
-  .site-profile > span {
-    display: none;
-  }
-
-  .site-nav {
-    order: 3;
-    width: 100%;
-    gap: 24px;
-    margin-top: 24px;
-  }
-
-  .site-nav-link {
-    font-size: 12px;
-    white-space: nowrap;
-  }
-
-  /* 모바일 마이페이지 상단 */
-  .mypage-top {
-    padding: 36px 24px;
-  }
-
-  .mypage-title {
-    font-size: 30px;
-  }
-
-  .mypage-description {
-    font-size: 14px;
-  }
-
-  /* 모바일 욜로 프로필 */
-  .mypage-profile {
-    display: grid;
-    grid-template-columns: 64px minmax(0, 1fr);
-    align-items: center;
-    gap: 16px;
-    position: relative;
-    margin-top: 36px;
-    padding: 24px 24px 76px;
-  }
-
-  .mypage-profile-avatar {
-    width: 64px;
-    height: 64px;
-  }
-
-  .mypage-profile-info {
-    min-width: 0;
-  }
-
-  .mypage-profile-name {
-    flex-wrap: wrap;
-    gap: 8px;
-    font-size: 22px;
-  }
-
-  .mypage-profile-badge {
-    font-size: 10px;
-  }
-
-  .mypage-profile-description {
-    font-size: 12px;
-  }
-
-  .mypage-profile-date {
-    position: absolute;
-    left: 24px;
-    bottom: 30px;
-    margin: 0;
-    font-size: 10px;
-  }
-
-  .mypage-profile-link {
-    position: absolute;
-    right: 24px;
-    bottom: 24px;
-    margin: 0;
-    padding: 10px 14px;
-    font-size: 12px;
-    white-space: nowrap;
-  }
+.site-header-inner {
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 24px;
 }
+
+.site-logo {
+  font-size: 20px;
+}
+
+.site-logo-mark {
+  width: 5px;
+  height: 18px;
+}
+
+.site-profile {
+  margin-left: auto;
+}
+
+.site-profile > span {
+  display: none;
+}
+
+.site-nav {
+  order: 3;
+  width: 100%;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.site-nav-link {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* 모바일 마이페이지 상단 */
+.mypage-top {
+  padding: 36px 24px;
+}
+
+.mypage-title {
+  font-size: 30px;
+}
+
+.mypage-description {
+  font-size: 14px;
+}
+
+/* 모바일 욜로 프로필 */
+.mypage-profile {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  margin-top: 36px;
+  padding: 24px 24px 76px;
+}
+
+.mypage-profile-avatar {
+  width: 64px;
+  height: 64px;
+}
+
+.mypage-profile-info {
+  min-width: 0;
+}
+
+.mypage-profile-name {
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 22px;
+}
+
+.mypage-profile-badge {
+  font-size: 10px;
+}
+
+.mypage-profile-description {
+  font-size: 12px;
+}
+
+.mypage-profile-date {
+  position: absolute;
+  left: 24px;
+  bottom: 30px;
+  margin: 0;
+  font-size: 10px;
+}
+
+.mypage-profile-link {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  margin: 0;
+  padding: 10px 14px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 /* 모바일 화면 끝 - 조영서 */
 /*--- 윤지빈 콘텐츠카드 시작---*/
 /* ===== 섹션 ===== */
@@ -601,46 +599,6 @@ footer {
   line-height: 1.8;
 }
 
-@media (max-width: 768px) {
-  .site-footer-inner {
-    padding: 32px 24px;
-  }
-
-  .site-footer-nav {
-    gap: 12px 16px;
-  }
-
-  .site-footer-nav a {
-    font-size: 10px;
-  }
-
-  .site-footer-description {
-    font-size: 11px;
-  }
-
-  .site-footer-copyright {
-    font-size: 10px;
-  }
-}
-/* 공통 푸터 끝 - 조영서 */
-
-/* ===== 데스크톱 (768px 이상) ===== */
-@media (min-width: 768px) {
-  .content-card {
-    padding: 40px 24px;
-  }
-
-  .content-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    overflow: visible;
-  }
-
-  .movie-card {
-    flex: none;
-  }
-}
 /* === 계정 설정 시작 - 김동민 === */
 
 /* 1. 계정 설정 전체 영역 */
@@ -650,7 +608,7 @@ footer {
   margin: 48px auto 0;
   padding: 0 64px;
   box-sizing: border-box;
-  color: #F3F1ED;
+  color: #f3f1ed;
 }
 
 /* 2. 계정 설정 제목 */
@@ -680,7 +638,7 @@ footer {
 
 /* 5. 이메일, 비밀번호 등 항목명 */
 .account-settings__label {
-  color: #ACADB3;
+  color: #acadb3;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.8;
@@ -690,7 +648,7 @@ footer {
 .account-settings__value {
   min-width: 0;
   margin: 0;
-  color: #F3F1ED;
+  color: #f3f1ed;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.8;
@@ -708,7 +666,7 @@ footer {
   padding: 8px 0 8px 12px;
   border: none;
   background: transparent;
-  color: #F28D77;
+  color: #f28d77;
   font: inherit;
   font-size: 12px;
   font-weight: 500;
@@ -719,13 +677,13 @@ footer {
 
 /* 9. 변경, 관리 버튼 Hover */
 .account-settings__action:hover {
-  color: #F3F1ED;
+  color: #f3f1ed;
 }
 
 /* 10. 키보드 Tab으로 버튼 선택 시 */
 .account-settings__action:focus-visible,
 .account-settings__logout:focus-visible {
-  outline: 2px solid #F28D77;
+  outline: 2px solid #f28d77;
   outline-offset: 4px;
 }
 
@@ -743,7 +701,7 @@ footer {
 /* 12. 계정 접속 안내 */
 .account-settings__notice {
   margin: 0;
-  color: #ACADB3;
+  color: #acadb3;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.8;
@@ -755,7 +713,7 @@ footer {
   padding: 8px 0;
   border: none;
   background: transparent;
-  color: #ACADB3;
+  color: #acadb3;
   font: inherit;
   font-size: 12px;
   line-height: 1.8;
@@ -765,14 +723,61 @@ footer {
 
 /* 14. 로그아웃 버튼 Hover */
 .account-settings__logout:hover {
-  color: #F3F1ED;
+  color: #f3f1ed;
 }
 
+/* 공통 푸터 끝 - 조영서 */
 
+/*==조영서 사이트 헤더,푸터==*/
+@media (max-width: 768px) {
+  .site-header {
+    border-bottom: 1px solid #303237;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer-inner {
+    padding: 32px 24px;
+  }
+
+  .site-footer-nav {
+    gap: 12px 16px;
+  }
+
+  .site-footer-nav a {
+    font-size: 10px;
+  }
+
+  .site-footer-description {
+    font-size: 11px;
+  }
+
+  .site-footer-copyright {
+    font-size: 10px;
+  }
+}
+
+/* =====윤지빈 콘텐트카드===== */
+@media (min-width: 768px) {
+  .content-card {
+    padding: 40px 24px;
+  }
+
+  .content-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    overflow: visible;
+  }
+
+  .movie-card {
+    flex: none;
+  }
+}
+/* --김동민 계정설정-- */
 /* --모바일 반응형 - 768px 이하-- */
 
 @media (max-width: 768px) {
-
   /* 15. 모바일 계정 설정 전체 영역 */
   .account-settings {
     margin-top: 36px;
@@ -814,6 +819,5 @@ footer {
     align-self: center;
   }
 }
-
 
 /* -- 계정 설정 끝 - 김동민 -- */
