@@ -13,13 +13,10 @@ body {
 
 /* 공통 헤더 시작 - 조영서 */
 .site-header {
-  display: flex;
-  align-items: space-around;
   background-color: #101113;
-  padding: 0 64px;
 }
 
-.site-header-left {
+.site-header-inner {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -111,194 +108,6 @@ body {
 }
 /* 마이페이지 상단 끝 - 조영서 */
 
-/* 욜로 프로필 시작 - 조영서 */
-.mypage-profile {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin-top: 48px;
-  padding: 32px;
-  background-color: #1a1c1f;
-  border-radius: 4px;
-}
-
-.mypage-profile-avatar {
-  display: block;
-  flex-shrink: 0;
-  width: 88px;
-  height: 88px;
-  border-radius: 8px;
-  object-fit: cover;
-  background-color: #789599;
-}
-
-.mypage-profile-info {
-  min-width: 0;
-}
-
-.mypage-profile-name {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0 0 8px;
-  font-size: 28px;
-  line-height: 1.4;
-}
-
-.mypage-profile-badge {
-  color: #f28d77;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.mypage-profile-description {
-  margin: 0 0 6px;
-  color: #acaeb3;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.mypage-profile-date {
-  margin: 0;
-  color: #acaeb3;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.mypage-profile-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  gap: 8px;
-  margin-left: auto;
-  padding: 12px 20px;
-  border: 1px solid #303237;
-  border-radius: 4px;
-  color: #f3f1ed;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.mypage-profile-link img {
-  display: block;
-  flex-shrink: 0;
-}
-
-.mypage-profile-link:hover {
-  border-color: #f28d77;
-}
-
-.mypage-profile-link:focus-visible {
-  outline: 2px solid #f28d77;
-  outline-offset: 4px;
-}
-/* 욜로 프로필 끝 - 조영서 */
-
-/* 모바일 화면 시작 - 조영서 */
-
-.site-header-inner {
-  flex-wrap: wrap;
-  gap: 0;
-  padding: 24px;
-}
-
-.site-logo {
-  font-size: 20px;
-}
-
-.site-logo-mark {
-  width: 5px;
-  height: 18px;
-}
-
-.site-profile {
-  margin-left: auto;
-}
-
-.site-profile > span {
-  display: none;
-}
-
-.site-nav {
-  order: 3;
-  width: 100%;
-  gap: 24px;
-  margin-top: 24px;
-}
-
-.site-nav-link {
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-/* 모바일 마이페이지 상단 */
-.mypage-top {
-  padding: 36px 24px;
-}
-
-.mypage-title {
-  font-size: 30px;
-}
-
-.mypage-description {
-  font-size: 14px;
-}
-
-/* 모바일 욜로 프로필 */
-.mypage-profile {
-  display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
-  align-items: center;
-  gap: 16px;
-  position: relative;
-  margin-top: 36px;
-  padding: 24px 24px 76px;
-}
-
-.mypage-profile-avatar {
-  width: 64px;
-  height: 64px;
-}
-
-.mypage-profile-info {
-  min-width: 0;
-}
-
-.mypage-profile-name {
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 22px;
-}
-
-.mypage-profile-badge {
-  font-size: 10px;
-}
-
-.mypage-profile-description {
-  font-size: 12px;
-}
-
-.mypage-profile-date {
-  position: absolute;
-  left: 24px;
-  bottom: 30px;
-  margin: 0;
-  font-size: 10px;
-}
-
-.mypage-profile-link {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
-  margin: 0;
-  padding: 10px 14px;
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-/* 모바일 화면 끝 - 조영서 */
 /*--- 윤지빈 콘텐츠카드 시작---*/
 /* ===== 섹션 ===== */
 .content-card {
@@ -363,6 +172,7 @@ body {
 .movie-card__title {
   margin-top: 12px;
   font-size: 16px;
+  font-weight: 600;
   color: #f3f1ed;
 }
 
@@ -728,10 +538,10 @@ footer {
   color: #f3f1ed;
 }
 
-/* 공통 푸터 끝 - 조영서 */
+/* 조영서 */
 
-/*==조영서 사이트 헤더,푸터==*/
 @media (max-width: 768px) {
+  /* 모바일 헤더 */
   .site-header {
     border-bottom: 1px solid #303237;
   }
@@ -757,9 +567,199 @@ footer {
   .site-footer-copyright {
     font-size: 10px;
   }
-}
+  /* 욜로 프로필 시작 - 조영서 */
+  .mypage-profile {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 48px;
+    padding: 32px;
+    background-color: #1a1c1f;
+    border-radius: 4px;
+  }
 
-/* =====윤지빈 콘텐트카드===== */
+  .mypage-profile-avatar {
+    display: block;
+    flex-shrink: 0;
+    width: 88px;
+    height: 88px;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #789599;
+  }
+
+  .mypage-profile-info {
+    min-width: 0;
+  }
+
+  .mypage-profile-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 8px;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .mypage-profile-badge {
+    color: #f28d77;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .mypage-profile-description {
+    margin: 0 0 6px;
+    color: #acaeb3;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .mypage-profile-date {
+    margin: 0;
+    color: #acaeb3;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .mypage-profile-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 8px;
+    margin-left: auto;
+    padding: 12px 20px;
+    border: 1px solid #303237;
+    border-radius: 4px;
+    color: #f3f1ed;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .mypage-profile-link img {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .mypage-profile-link:hover {
+    border-color: #f28d77;
+  }
+
+  .mypage-profile-link:focus-visible {
+    outline: 2px solid #f28d77;
+    outline-offset: 4px;
+  }
+  /* 욜로 프로필 끝 - 조영서 */
+
+  /* 모바일 화면 시작 - 조영서 */
+
+  .site-header-inner {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 24px;
+  }
+
+  .site-logo {
+    font-size: 20px;
+  }
+
+  .site-logo-mark {
+    width: 5px;
+    height: 18px;
+  }
+
+  .site-profile {
+    margin-left: auto;
+  }
+
+  .site-profile > span {
+    display: none;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .site-nav-link {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* 모바일 마이페이지 상단 */
+  .mypage-top {
+    padding: 36px 24px;
+  }
+
+  .mypage-title {
+    font-size: 30px;
+  }
+
+  .mypage-description {
+    font-size: 14px;
+  }
+
+  /* 모바일 욜로 프로필 */
+  .mypage-profile {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    margin-top: 36px;
+    padding: 24px 24px 76px;
+  }
+
+  .mypage-profile-avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  .mypage-profile-info {
+    min-width: 0;
+  }
+
+  .mypage-profile-name {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 22px;
+  }
+
+  .mypage-profile-badge {
+    font-size: 10px;
+  }
+
+  .mypage-profile-description {
+    font-size: 12px;
+  }
+
+  .mypage-profile-date {
+    position: absolute;
+    left: 24px;
+    bottom: 30px;
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .mypage-profile-link {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    margin: 0;
+    padding: 10px 14px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* 모바일 화면 끝 - 조영서 */
+}
+/* 공통 푸터 끝 - 조영서 */
+
+/* 윤지빈 */
+/* ===== 데스크톱 (768px 이상) ===== */
 @media (min-width: 768px) {
   .content-card {
     padding: 40px 24px;
@@ -776,7 +776,9 @@ footer {
     flex: none;
   }
 }
-/* --김동민 계정설정-- */
+
+/* 김동민 */
+
 /* --모바일 반응형 - 768px 이하-- */
 
 @media (max-width: 768px) {
