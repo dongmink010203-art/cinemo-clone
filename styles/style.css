@@ -13,10 +13,13 @@ body {
 
 /* 공통 헤더 시작 - 조영서 */
 .site-header {
+  display: flex;
+  align-items: space-around;
   background-color: #101113;
+  padding: 0 64px;
 }
 
-.site-header-inner {
+.site-header-left {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -360,7 +363,6 @@ body {
 .movie-card__title {
   margin-top: 12px;
   font-size: 16px;
-  font-weight: 600;
   color: #f3f1ed;
 }
 
