@@ -372,23 +372,6 @@ body {
   color: #9a9aa0;
 }
 
-/* ===== 데스크톱 (768px 이상) ===== */
-@media (min-width: 768px) {
-  .content-card {
-    padding: 40px 24px;
-  }
-
-  .content-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    overflow: visible;
-  }
-
-  .movie-card {
-    flex: none;
-  }
-}
 /*--- 윤지빈 콘텐츠카드 끝---*/
 
 /* 프로필 선택 화면 시작 - 김어진 */
@@ -640,3 +623,21 @@ footer {
   }
 }
 /* 공통 푸터 끝 - 조영서 */
+
+/* ===== 데스크톱 (768px 이상) ===== */
+@media (min-width: 768px) {
+  .content-card {
+    padding: 40px 24px;
+  }
+
+  .content-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    overflow: visible;
+  }
+
+  .movie-card {
+    flex: none;
+  }
+}
