@@ -1214,3 +1214,16 @@ footer {
   }
 }
 /*========= 프로필 끝 - 김어진 =========*/
+
+/*========= 작은 모바일 욜로 카드 시작 - 조영서 =========*/
+/* feature/youngseo: 360px 이하에서 날짜와 버튼이 겹치지 않도록 분리 */
+@media (max-width: 360px) {
+  .mypage-profile {
+    padding-bottom: 112px;
+  }
+
+  .mypage-profile-date {
+    bottom: 80px;
+  }
+}
+/*========= 작은 모바일 욜로 카드 끝 - 조영서 =========*/
