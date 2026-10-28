@@ -1,4 +1,4 @@
-/*========= 공통 스타일 시작 - 조영서  =========*/
+/*========= 공통 스타일 시작 - 조영서 =========*/
 * {
   box-sizing: border-box;
 }
@@ -79,6 +79,7 @@ body {
   outline-offset: 4px;
 }
 /* 공통 헤더 끝 - 조영서 */
+
 /* 공통 푸터 시작 - 조영서 */
 .site-footer {
   border-top: 1px solid #303237;
@@ -131,9 +132,9 @@ body {
   line-height: 1.8;
 }
 /* 공통 푸터 끝 - 조영서 */
-/*========= 공통 기본 끝 - 조영서  =========*/
+/*========= 공통 스타일 끝 - 조영서 =========*/
 
-/*========= 메인 히어로 배너 시작 - 박혜정  =========*/
+/*========= 메인 히어로 배너 시작 - 박혜정 =========*/
 .main-hero {
   position: relative;
   display: flex;
@@ -299,9 +300,9 @@ body {
   color: #acaeb3;
   font-size: 10px;
 }
-/*========= 메인 히어로 배너 끝 - 박혜정  =========*/
+/*========= 메인 히어로 배너 끝 - 박혜정 =========*/
 
-/*========= 메인 콘텐츠 카드 시작 - 윤지빈  =========*/
+/*========= 메인 콘텐츠 카드 시작 - 윤지빈 =========*/
 /* ===== 섹션 ===== */
 .content-card {
   flex-shrink: 0;
@@ -374,10 +375,9 @@ body {
   font-size: 11px;
   color: #9a9aa0;
 }
+/*========= 메인 콘텐츠 카드 끝 - 윤지빈 =========*/
 
-/*========= 메인 콘텐츠 카드 끝 - 윤지빈  =========*/
-
-/*========= 마이페이지 상단 시작 - 조영서  =========*/
+/*========= 마이페이지 상단 시작 - 조영서 =========*/
 /* 마이페이지 텍스트 시작 - 조영서 */
 .mypage-top {
   max-width: 1440px;
@@ -404,6 +404,7 @@ body {
   line-height: 1.8;
 }
 /* 마이페이지 텍스트 끝 - 조영서 */
+
 /* 욜로 프로필 시작 - 조영서 */
 .mypage-profile {
   display: flex;
@@ -488,9 +489,9 @@ body {
   outline-offset: 4px;
 }
 /* 욜로 프로필 끝 - 조영서 */
-/*========= 마이페이지 상단 끝 - 조영서  =========*/
-/*========= 마이페이지 계정 설정 시작 - 김동민 =========*/
+/*========= 마이페이지 상단 끝 - 조영서 =========*/
 
+/*========= 마이페이지 계정 설정 시작 - 김동민 =========*/
 /* 1. 계정 설정 전체 영역 */
 .account-settings {
   width: 100%;
@@ -615,10 +616,9 @@ body {
 .account-settings__logout:hover {
   color: #f3f1ed;
 }
-/*========= 마이페이지 계정 설정 시작 - 김동민 =========*/
+/*========= 마이페이지 계정 설정 끝 - 김동민 =========*/
 
 /*========= 프로필 선택 화면 시작 - 김어진 =========*/
-
 .profile-main {
   display: flex;
   flex-direction: column;
@@ -628,7 +628,6 @@ body {
 }
 
 /* 프로필 제목 시작 - 김어진 */
-
 .profile-intro {
   text-align: center;
 }
@@ -648,10 +647,9 @@ body {
   color: #acaeb3;
   font-size: 15px;
 }
-
 /* 프로필 제목 끝 - 김어진 */
-/* 프로필 선택 리스트 시작 - 김어진 */
 
+/* 프로필 선택 리스트 시작 - 김어진 */
 .profile-selection {
   margin: 56px auto;
 }
@@ -743,10 +741,9 @@ body {
   font-size: 11px;
   color: #acaeb3;
 }
-
 /* 프로필 선택 리스트 끝 - 김어진 */
-/* 프로필 관리 버튼 시작 - 김어진 */
 
+/* 프로필 관리 버튼 시작 - 김어진 */
 .profile-button {
   display: flex;
   align-items: center;
@@ -780,8 +777,8 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
-
 /* 프로필 관리 버튼 끝 - 김어진 */
+
 /* 프로필 푸터 시작 - 김어진 */
 footer {
   color: #7e8289;
@@ -789,22 +786,51 @@ footer {
   text-align: center;
   padding-bottom: 75px;
 }
-
 /* 프로필 푸터 끝 - 김어진 */
-/*========= 프로필 선택 화면 시작 - 김어진 =========*/
+/*========= 프로필 선택 화면 끝 - 김어진 =========*/
 
 /*========================== 미디어 쿼리 ==========================*/
 
-/* 조영서 */
-
+/*========= 모바일 공통 UI·마이페이지 상단 시작 - 조영서 =========*/
+/* feature/youngseo: 중복된 모바일 설정을 한곳으로 모음 */
 @media (max-width: 768px) {
-  /* 모바일 헤더 */
+  /* 모바일 헤더 시작 - 조영서 */
   .site-header {
     border-bottom: 1px solid #303237;
   }
-}
 
-@media (max-width: 768px) {
+  .site-header-inner {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 24px;
+  }
+
+  .site-logo {
+    font-size: 20px;
+  }
+
+  .site-logo-mark {
+    width: 5px;
+    height: 18px;
+  }
+
+  .site-profile > span {
+    display: none;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .site-nav-link {
+    font-size: 12px;
+  }
+  /* 모바일 헤더 끝 - 조영서 */
+
+  /* 모바일 푸터 시작 - 조영서 */
   .site-footer-inner {
     padding: 32px 24px;
   }
@@ -824,129 +850,9 @@ footer {
   .site-footer-copyright {
     font-size: 10px;
   }
-  /* 욜로 프로필 시작 - 조영서 */
-  .mypage-profile {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    margin-top: 48px;
-    padding: 32px;
-    background-color: #1a1c1f;
-    border-radius: 4px;
-  }
+  /* 모바일 푸터 끝 - 조영서 */
 
-  .mypage-profile-avatar {
-    display: block;
-    flex-shrink: 0;
-    width: 88px;
-    height: 88px;
-    border-radius: 8px;
-    object-fit: cover;
-    background-color: #789599;
-  }
-
-  .mypage-profile-info {
-    min-width: 0;
-  }
-
-  .mypage-profile-name {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 0 0 8px;
-    font-size: 28px;
-    line-height: 1.4;
-  }
-
-  .mypage-profile-badge {
-    color: #f28d77;
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  .mypage-profile-description {
-    margin: 0 0 6px;
-    color: #acaeb3;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .mypage-profile-date {
-    margin: 0;
-    color: #acaeb3;
-    font-size: 12px;
-    line-height: 1.5;
-  }
-
-  .mypage-profile-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    gap: 8px;
-    margin-left: auto;
-    padding: 12px 20px;
-    border: 1px solid #303237;
-    border-radius: 4px;
-    color: #f3f1ed;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .mypage-profile-link img {
-    display: block;
-    flex-shrink: 0;
-  }
-
-  .mypage-profile-link:hover {
-    border-color: #f28d77;
-  }
-
-  .mypage-profile-link:focus-visible {
-    outline: 2px solid #f28d77;
-    outline-offset: 4px;
-  }
-  /* 욜로 프로필 끝 - 조영서 */
-
-  /* 모바일 화면 시작 - 조영서 */
-
-  .site-header-inner {
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 24px;
-  }
-
-  .site-logo {
-    font-size: 20px;
-  }
-
-  .site-logo-mark {
-    width: 5px;
-    height: 18px;
-  }
-
-  .site-profile {
-    margin-left: auto;
-  }
-
-  .site-profile > span {
-    display: none;
-  }
-
-  .site-nav {
-    order: 3;
-    width: 100%;
-    gap: 24px;
-    margin-top: 24px;
-  }
-
-  .site-nav-link {
-    font-size: 12px;
-    white-space: nowrap;
-  }
-
-  /* 모바일 마이페이지 상단 */
+  /* 모바일 마이페이지 텍스트 시작 - 조영서 */
   .mypage-top {
     padding: 36px 24px;
   }
@@ -958,12 +864,12 @@ footer {
   .mypage-description {
     font-size: 14px;
   }
+  /* 모바일 마이페이지 텍스트 끝 - 조영서 */
 
-  /* 모바일 욜로 프로필 */
+  /* 모바일 욜로 프로필 시작 - 조영서 */
   .mypage-profile {
     display: grid;
     grid-template-columns: 64px minmax(0, 1fr);
-    align-items: center;
     gap: 16px;
     position: relative;
     margin-top: 36px;
@@ -973,10 +879,6 @@ footer {
   .mypage-profile-avatar {
     width: 64px;
     height: 64px;
-  }
-
-  .mypage-profile-info {
-    min-width: 0;
   }
 
   .mypage-profile-name {
@@ -997,7 +899,6 @@ footer {
     position: absolute;
     left: 24px;
     bottom: 30px;
-    margin: 0;
     font-size: 10px;
   }
 
@@ -1010,10 +911,9 @@ footer {
     font-size: 12px;
     white-space: nowrap;
   }
-
-  /* 모바일 화면 끝 - 조영서 */
+  /* 모바일 욜로 프로필 끝 - 조영서 */
 }
-/* 공통 푸터 끝 - 조영서 */
+/*========= 모바일 공통 UI·마이페이지 상단 끝 - 조영서 =========*/
 
 /* 윤지빈 */
 /* ===== 데스크톱 (768px 이상) ===== */
@@ -1035,9 +935,7 @@ footer {
 }
 
 /* 김동민 */
-
 /* --모바일 반응형 - 768px 이하-- */
-
 @media (max-width: 768px) {
   /* 15. 모바일 계정 설정 전체 영역 */
   .account-settings {
@@ -1056,7 +954,6 @@ footer {
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-rows: auto auto;
     gap: 4px 16px;
-
     min-height: 0;
     padding: 16px 0;
   }
@@ -1080,117 +977,9 @@ footer {
     align-self: center;
   }
 }
-
 /* -- 계정 설정 끝 - 김동민 -- */
-/* 모바일 화면 시작 - 조영서 */
-@media (max-width: 768px) {
-  /* 모바일 헤더 */
-  .site-header {
-    border-bottom: 1px solid #303237;
-  }
 
-  .site-header-inner {
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 24px;
-  }
-
-  .site-logo {
-    font-size: 20px;
-  }
-
-  .site-logo-mark {
-    width: 5px;
-    height: 18px;
-  }
-
-  .site-profile {
-    margin-left: auto;
-  }
-
-  .site-profile > span {
-    display: none;
-  }
-
-  .site-nav {
-    order: 3;
-    width: 100%;
-    gap: 24px;
-    margin-top: 24px;
-  }
-
-  .site-nav-link {
-    font-size: 12px;
-    white-space: nowrap;
-  }
-
-  /* 모바일 마이페이지 상단 */
-  .mypage-top {
-    padding: 36px 24px;
-  }
-
-  .mypage-title {
-    font-size: 30px;
-  }
-
-  .mypage-description {
-    font-size: 14px;
-  }
-
-  /* 모바일 욜로 프로필 */
-  .mypage-profile {
-    display: grid;
-    grid-template-columns: 64px minmax(0, 1fr);
-    align-items: center;
-    gap: 16px;
-    position: relative;
-    margin-top: 36px;
-    padding: 24px 24px 76px;
-  }
-
-  .mypage-profile-avatar {
-    width: 64px;
-    height: 64px;
-  }
-
-  .mypage-profile-info {
-    min-width: 0;
-  }
-
-  .mypage-profile-name {
-    flex-wrap: wrap;
-    gap: 8px;
-    font-size: 22px;
-  }
-
-  .mypage-profile-badge {
-    font-size: 10px;
-  }
-
-  .mypage-profile-description {
-    font-size: 12px;
-  }
-
-  .mypage-profile-date {
-    position: absolute;
-    left: 24px;
-    bottom: 30px;
-    margin: 0;
-    font-size: 10px;
-  }
-
-  .mypage-profile-link {
-    position: absolute;
-    right: 24px;
-    bottom: 24px;
-    margin: 0;
-    padding: 10px 14px;
-    font-size: 12px;
-    white-space: nowrap;
-  }
-}
-/* 모바일 화면 끝 - 조영서 */
-/* ==== 모바일 파트 메인 히어로 베너 - 박혜정 ==== */
+/* ==== 모바일 파트 메인 히어로 배너 - 박혜정 ==== */
 @media (max-width: 768px) {
   .main-hero {
     align-items: flex-end;
@@ -1249,6 +1038,7 @@ footer {
   }
 }
 /* ==== 모바일 파트 메인 히어로 끝 - 박혜정 ==== */
+
 /*========= 프로필 시작 - 김어진 =========*/
 @media screen and (max-width: 767.98px) {
   .profile-main {
@@ -1264,4 +1054,4 @@ footer {
     gap: 28px 32px;
   }
 }
-/*========= 프로필 끝 - 김어진  =========*/
+/*========= 프로필 끝 - 김어진 =========*/
