@@ -393,12 +393,13 @@ body {
   text-decoration: none;
 }
 
-.movie-card img {
+.movie-card a img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 4px;
+  transition: filter 0.2s;
 }
 
 .movie-card__title {
@@ -409,6 +410,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: color 0.2s;
 }
 
 .movie-card__information {
@@ -418,6 +420,10 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.movie-card a:hover .movie-card__title {
+  color: #f28d77;
 }
 /*--- 윤지빈 메인 콘텐츠카드 끝---*/
 
@@ -465,7 +471,6 @@ body {
 
 .content-list--wish .movie-card__title {
   font-size: 14px;
-  font-weight: 400;
 }
 
 /*========= 마이페이지 상단 시작 - 조영서 =========*/
@@ -1064,6 +1069,16 @@ body {
 
   .content-list--wish .movie-card__title {
     font-size: 16px;
+  }
+}
+
+@media (hover: hover) {
+  .movie-card a:hover img {
+    filter: brightness(1.15);
+
+    .movie-card a:hover .movie-card__title {
+      color: #f28d77;
+    }
   }
 }
 
