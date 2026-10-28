@@ -15,13 +15,14 @@ body {
   background-color: #101113;
 }
 
+/* feature/youngseo: 콘텐츠와 좌우 시작선을 맞추기 위해 64px 적용 */
 .site-header-inner {
   display: flex;
   align-items: center;
   gap: 32px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 24px 32px;
+  padding: 24px 64px;
 }
 
 .site-logo {
@@ -55,15 +56,29 @@ body {
   white-space: nowrap;
 }
 
+/* feature/youngseo: 현재 페이지와 메뉴 hover 색상 적용 */
+.site-nav-link[aria-current="page"] {
+  color: #f3f1ed;
+}
+
+.site-nav-link:hover {
+  color: #f28d77;
+}
+
 .site-profile {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-left: auto;
-  color: #f28d77;
+  color: #acaeb3;
   font-size: 14px;
   text-decoration: none;
   flex-shrink: 0;
+}
+
+/* feature/youngseo: 현재 마이페이지 표시를 CSS에서 관리 */
+.site-profile[aria-current="page"] {
+  color: #f28d77;
 }
 
 .site-profile-avatar {
@@ -374,7 +389,6 @@ body {
   font-size: 11px;
   color: #acaeb3;
 }
-
 /*--- 윤지빈 메인 콘텐츠카드 끝---*/
 
 /*--- 윤지빈 찜한 콘텐츠카드 시작---*/
@@ -847,6 +861,17 @@ footer {
 /*========= 프로필 선택 화면 끝 - 김어진 =========*/
 
 /*========================== 미디어 쿼리 ==========================*/
+
+/* feature/youngseo: 좁은 PC에서는 메뉴 사이 간격을 줄임 */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .site-header-inner {
+    gap: 16px;
+  }
+
+  .site-nav {
+    gap: 16px;
+  }
+}
 
 /*========= 모바일 공통 UI·마이페이지 상단 시작 - 조영서 =========*/
 /* feature/youngseo: 중복된 모바일 설정을 한곳으로 모음 */
