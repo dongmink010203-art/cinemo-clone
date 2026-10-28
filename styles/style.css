@@ -602,9 +602,9 @@ body {
 
 /*--- 윤지빈 콘텐츠카드 끝---*/
 
-/* 프로필 선택 화면 시작 - 김어진 */
+/*========= 프로필 선택 화면 시작 - 김어진 =========*/
 
-.profile-text {
+.profile-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -612,7 +612,7 @@ body {
   padding: 116px 64px 120px 64px;
 }
 
-/* 프로필 인트로 시작 - 김어진 */
+/* 프로필 제목 시작 - 김어진 */
 
 .profile-intro {
   text-align: center;
@@ -634,8 +634,8 @@ body {
   font-size: 15px;
 }
 
-/* 프로필 인트로 끝 - 김어진 */
-/* 프로필 선택 리스트 끝 */
+/* 프로필 제목 끝 - 김어진 */
+/* 프로필 선택 리스트 시작 - 김어진 */
 
 .profile-selection {
   margin: 56px auto;
@@ -729,8 +729,8 @@ body {
   color: #acaeb3;
 }
 
-/* 프로필 선택 리스트 끝 */
-/* 프로필 관리 버튼 시작 */
+/* 프로필 선택 리스트 끝 - 김어진 */
+/* 프로필 관리 버튼 시작 - 김어진 */
 
 .profile-button {
   display: flex;
@@ -766,8 +766,8 @@ body {
   font-weight: bold;
 }
 
-/* 프로필 관리 버튼 끝 */
-/* 프로필 푸터 시작 */
+/* 프로필 관리 버튼 끝 - 김어진 */
+/* 프로필 푸터 시작 - 김어진 */
 footer {
   color: #7e8289;
   font-size: 11px;
@@ -775,8 +775,8 @@ footer {
   padding-bottom: 75px;
 }
 
-/* 프로필 푸터 끝 */
-/* 프로필 선택 화면 끝 */
+/* 프로필 푸터 끝 - 김어진 */
+/*========= 프로필 선택 화면 시작 - 김어진 =========*/
 /* 공통 푸터 시작 - 조영서 */
 .site-footer {
   border-top: 1px solid #303237;
