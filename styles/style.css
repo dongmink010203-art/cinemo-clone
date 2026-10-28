@@ -315,66 +315,7 @@ body {
   color: #acaeb3;
   font-size: 10px;
 }
-
-/* ==== 모바일 파트 ==== */
-@media (max-width: 768px) {
-  .main-hero {
-    align-items: flex-end;
-    min-height: 560px;
-    padding: 0 24px 96px;
-  }
-
-  .main-hero::after {
-    background: linear-gradient(
-      180deg,
-      rgba(16, 17, 19, 0) 0%,
-      rgba(16, 17, 19, 0.7) 55%,
-      rgba(16, 17, 19, 1) 100%
-    );
-  }
-
-  .main-hero__image {
-    object-position: 70% center;
-  }
-
-  .main-hero__weekly {
-    margin-bottom: 16px;
-  }
-
-  .main-hero__title {
-    font-size: 44px;
-  }
-
-  .main-hero__sub-title {
-    margin-bottom: 20px;
-  }
-
-  .main-hero__time {
-    flex-wrap: wrap;
-    gap: 8px 12px;
-    margin-bottom: 16px;
-  }
-
-  .main-hero__intro {
-    margin-bottom: 24px;
-    font-size: 14px;
-  }
-
-  .main-hero__button1,
-  .main-hero__button2 {
-    padding: 12px 20px;
-    font-size: 13px;
-  }
-
-  .main-hero__caption {
-    right: 24px;
-    bottom: 32px;
-    left: 24px;
-    font-size: 12px;
-    text-align: left;
-  }
-}
-/* 메인 히어로 배너 끝 - 박혜정 */
+/*========= 메인 히어로 배너 끝 - 박혜정 =========*/
 
 /*--- 윤지빈 메인 콘텐츠카드 시작---*/
 /* ===== 섹션 ===== */
@@ -745,7 +686,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 116px 64px 120px 64px;
+  padding: 116px 64px 120px;
 }
 
 /* 프로필 제목 시작 - 김어진 */
@@ -1199,18 +1140,32 @@ footer {
 /* ==== 모바일 파트 메인 히어로 끝 - 박혜정 ==== */
 
 /*========= 프로필 시작 - 김어진 =========*/
-@media screen and (max-width: 767.5px) {
+@media (max-width: 910px) {
+  .profile-main {
+    padding: 116px 0px 120px;
+  }
+}
+/* 모바일 프로필 시작 - 김어진 */
+@media (max-width: 767.5px) {
   .profile-main {
     padding: 56px 24px;
   }
 
   .profile-selection {
-    margin: 20px auto;
+    margin: 30px auto;
   }
 
   .profile-list {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 8px 12px;
   }
+
+  .profile-card {
+    padding: 10px;
+  }
 }
+
+@media (max-width: 410) {
+}
+/* 모바일 프로필 끝 - 김어진 */
 /*========= 프로필 끝 - 김어진 =========*/
