@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>마이페이지 | CINEMO</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -22,11 +23,12 @@
           CINEMO
         </a>
 
+        <!-- feature/youngseo: 메뉴를 링크로 변경 -->
         <nav class="site-nav" aria-label="주 메뉴">
           <a class="site-nav-link" href="./index.html">홈</a>
-          <span class="site-nav-link">영화</span>
-          <span class="site-nav-link">시리즈</span>
-          <span class="site-nav-link">내가 찜한 콘텐츠</span>
+          <a class="site-nav-link" href="#">영화</a>
+          <a class="site-nav-link" href="#">시리즈</a>
+          <a class="site-nav-link" href="#">내가 찜한 콘텐츠</a>
         </nav>
 
         <a class="site-profile" href="./mypage.html" aria-current="page">
@@ -64,7 +66,6 @@
             </h2>
 
             <p class="mypage-profile-description">나만의 영화 노트</p>
-
             <p class="mypage-profile-date">2026년 10월부터 함께하는 중</p>
           </div>
 
@@ -81,7 +82,7 @@
       </section>
       <!-- 마이페이지 상단 끝 - 조영서 -->
 
-      <!--마이페이지 내가 찜한 콘텐츠 시작 -윤지빈 -->
+      <!-- 마이페이지 내가 찜한 콘텐츠 시작 - 윤지빈 -->
       <section class="content-card content-card--wish">
         <div class="content-card__header">
           <h2 class="content-card__title">내가 찜한 콘텐츠</h2>
@@ -166,6 +167,7 @@
           </li>
         </ul>
       </section>
+      <!-- 마이페이지 내가 찜한 콘텐츠 끝 - 윤지빈 -->
 
       <!-- 마이페이지 계정 설정 시작 - 김동민 -->
       <section class="account-settings">
@@ -178,7 +180,11 @@
             <dt class="account-settings__label">이메일</dt>
             <dd class="account-settings__value">yolo202617@example.com</dd>
             <dd class="account-settings__control">
-              <button type="button" class="account-settings__action" aria-label="이메일 변경"> 
+              <button
+                type="button"
+                class="account-settings__action"
+                aria-label="이메일 변경"
+              >
                 변경
               </button>
             </dd>
@@ -188,7 +194,11 @@
             <dt class="account-settings__label">비밀번호</dt>
             <dd class="account-settings__value">••••••••••••</dd>
             <dd class="account-settings__control">
-              <button type="button" class="account-settings__action" aria-label="비밀번호 변경">
+              <button
+                type="button"
+                class="account-settings__action"
+                aria-label="비밀번호 변경"
+              >
                 변경
               </button>
             </dd>
@@ -198,7 +208,11 @@
             <dt class="account-settings__label">멤버십</dt>
             <dd class="account-settings__value">베이식 · 월 9,500원</dd>
             <dd class="account-settings__control">
-              <button type="button" class="account-settings__action" aria-label="멤버십 관리">
+              <button
+                type="button"
+                class="account-settings__action"
+                aria-label="멤버십 관리"
+              >
                 관리
               </button>
             </dd>
@@ -208,7 +222,11 @@
             <dt class="account-settings__label">표시 언어</dt>
             <dd class="account-settings__value">한국어</dd>
             <dd class="account-settings__control">
-              <button type="button" class="account-settings__action" aria-label="표시 언어 변경">
+              <button
+                type="button"
+                class="account-settings__action"
+                aria-label="표시 언어 변경"
+              >
                 변경
               </button>
             </dd>
@@ -224,6 +242,7 @@
       </section>
       <!-- 마이페이지 계정 설정 끝 - 김동민 -->
     </main>
+
     <!-- 공통 푸터 시작 - 조영서 -->
     <footer class="site-footer">
       <div class="site-footer-inner">
