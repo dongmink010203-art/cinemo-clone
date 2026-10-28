@@ -300,15 +300,73 @@ body {
   color: #acaeb3;
   font-size: 10px;
 }
-/*========= 메인 히어로 배너 끝 - 박혜정 =========*/
 
-/*========= 메인 콘텐츠 카드 시작 - 윤지빈 =========*/
+/* ==== 모바일 파트 ==== */
+@media (max-width: 768px) {
+  .main-hero {
+    align-items: flex-end;
+    min-height: 560px;
+    padding: 0 24px 96px;
+  }
+
+  .main-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(16, 17, 19, 0) 0%,
+      rgba(16, 17, 19, 0.7) 55%,
+      rgba(16, 17, 19, 1) 100%
+    );
+  }
+
+  .main-hero__image {
+    object-position: 70% center;
+  }
+
+  .main-hero__weekly {
+    margin-bottom: 16px;
+  }
+
+  .main-hero__title {
+    font-size: 44px;
+  }
+
+  .main-hero__sub-title {
+    margin-bottom: 20px;
+  }
+
+  .main-hero__time {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-bottom: 16px;
+  }
+
+  .main-hero__intro {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .main-hero__button1,
+  .main-hero__button2 {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .main-hero__caption {
+    right: 24px;
+    bottom: 32px;
+    left: 24px;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+/* 메인 히어로 배너 끝 - 박혜정 */
+/*--- 윤지빈 메인 콘텐츠카드 시작---*/
 /* ===== 섹션 ===== */
 .content-card {
   flex-shrink: 0;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 32px 16px;
+  padding: 36px 24px;
 }
 
 .content-card__header {
@@ -332,13 +390,13 @@ body {
 
 .content-card__badge {
   font-size: 12px;
-  color: #9a9aa0;
+  color: #7e8289;
 }
 
 /* ===== 카드 리스트 (모바일: 가로 스크롤) ===== */
 .content-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   overflow-x: auto;
   list-style: none;
   padding: 0;
@@ -366,16 +424,63 @@ body {
 .movie-card__title {
   margin-top: 12px;
   font-size: 16px;
-  font-weight: 600;
   color: #f3f1ed;
 }
 
 .movie-card__information {
   margin-top: 2px;
   font-size: 11px;
-  color: #9a9aa0;
+  color: #acaeb3;
 }
-/*========= 메인 콘텐츠 카드 끝 - 윤지빈 =========*/
+
+/*--- 윤지빈 메인 콘텐츠카드 끝---*/
+
+/*--- 윤지빈 찜한 콘텐츠카드 시작---*/
+.content-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.content-card__badge {
+  font-size: 12px;
+  color: #7e8289;
+  line-height: 36px;
+}
+
+.content-card--wish {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.content-list--wish {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  overflow: visible;
+}
+
+.movie-card {
+  position: relative;
+}
+
+.movie-card__check {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #232529;
+  color: #f28d77;
+  font-size: 12px;
+  cursor: pointer;
+}
 
 /*========= 마이페이지 상단 시작 - 조영서 =========*/
 /* 마이페이지 텍스트 시작 - 조영서 */
@@ -926,10 +1031,14 @@ footer {
 /*========= 모바일 공통 UI·마이페이지 상단 끝 - 조영서 =========*/
 
 /* 윤지빈 */
-/* ===== 데스크톱 (768px 이상) ===== */
+/* =====메인 콘텐츠 카드, 찜한 콘텐츠 ===== */
 @media (min-width: 768px) {
   .content-card {
-    padding: 40px 24px;
+    padding: 40px 64px;
+  }
+
+  .content-card__title {
+    font-size: 24px;
   }
 
   .content-list {
@@ -941,6 +1050,20 @@ footer {
 
   .movie-card {
     flex: none;
+  }
+
+  .movie-card__check img {
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+
+  .content-card--wish {
+    padding: 0 64px;
+  }
+
+  .content-list--wish {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
