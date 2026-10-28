@@ -15,7 +15,6 @@ body {
   background-color: #101113;
 }
 
-/* feature/youngseo: 콘텐츠와 좌우 시작선을 맞추기 위해 64px 적용 */
 .site-header-inner {
   display: flex;
   align-items: center;
@@ -56,7 +55,6 @@ body {
   white-space: nowrap;
 }
 
-/* feature/youngseo: 현재 페이지와 메뉴 hover 색상 적용 */
 .site-nav-link[aria-current="page"] {
   color: #f3f1ed;
 }
@@ -76,7 +74,6 @@ body {
   flex-shrink: 0;
 }
 
-/* feature/youngseo: 현재 마이페이지 표시를 CSS에서 관리 */
 .site-profile[aria-current="page"] {
   color: #f28d77;
 }
@@ -862,8 +859,7 @@ footer {
 
 /*========================== 미디어 쿼리 ==========================*/
 
-/* feature/youngseo: 좁은 PC에서는 메뉴 사이 간격을 줄임 */
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .site-header-inner {
     gap: 16px;
   }
@@ -874,8 +870,7 @@ footer {
 }
 
 /*========= 모바일 공통 UI·마이페이지 상단 시작 - 조영서 =========*/
-/* feature/youngseo: 중복된 모바일 설정을 한곳으로 모음 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* 모바일 헤더 시작 - 조영서 */
   .site-header {
     border-bottom: 1px solid #303237;
@@ -1171,7 +1166,6 @@ footer {
 /*========= 프로필 끝 - 김어진 =========*/
 
 /*========= 작은 모바일 욜로 카드 시작 - 조영서 =========*/
-/* feature/youngseo: 360px 이하에서 날짜와 버튼이 겹치지 않도록 분리 */
 @media (max-width: 360px) {
   .mypage-profile {
     padding-bottom: 112px;
