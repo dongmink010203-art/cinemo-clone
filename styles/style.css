@@ -686,7 +686,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 116px 64px 120px;
+  padding: 116px 0px 120px;
 }
 
 /* 프로필 제목 시작 - 김어진 */
@@ -851,11 +851,10 @@ body {
 /* 프로필 관리 버튼 끝 - 김어진 */
 
 /* 프로필 푸터 시작 - 김어진 */
-footer {
+.profile-footer {
   color: #7e8289;
   font-size: 11px;
   text-align: center;
-  padding-bottom: 75px;
 }
 /* 프로필 푸터 끝 - 김어진 */
 /*========= 프로필 선택 화면 끝 - 김어진 =========*/
@@ -1139,16 +1138,10 @@ footer {
 }
 /* ==== 모바일 파트 메인 히어로 끝 - 박혜정 ==== */
 
-/*========= 프로필 시작 - 김어진 =========*/
-@media (max-width: 910px) {
-  .profile-main {
-    padding: 116px 0px 120px;
-  }
-}
-/* 모바일 프로필 시작 - 김어진 */
+/*========= 모바일 프로필 시작 - 김어진 =========*/
 @media (max-width: 767.5px) {
   .profile-main {
-    padding: 56px 24px;
+    padding: 56px 0px;
   }
 
   .profile-selection {
@@ -1164,11 +1157,61 @@ footer {
     padding: 10px;
   }
 }
+/* 작은 화면용 프로필 이미지 - 김어진 */
+@media (max-width: 400px) {
+  .profile-main {
+    padding: 30px 0px;
+  }
 
-@media (max-width: 410) {
+  .profile-intro-top {
+    font-size: 8px;
+  }
+
+  .profile-intro-middle {
+    font-size: 35px;
+    margin: 5px 0;
+  }
+
+  .profile-intro-bottom {
+    font-size: 13px;
+  }
+
+  .profile-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+  }
+  .image-profile {
+    width: 130px;
+    height: 130px;
+  }
+
+  .circle-top {
+    width: 104px;
+    height: 104px;
+    top: -27px;
+    left: 62px;
+  }
+
+  .circle-bottom {
+    width: 149.5px;
+    height: 149.5px;
+    top: 64px;
+    left: -44.5px;
+  }
+
+  .dot {
+    width: 7.15px;
+    height: 7.15px;
+    top: 101px;
+    left: 101px;
+  }
+
+  .profile-initials {
+    font-size: 62.4px;
+  }
 }
-/* 모바일 프로필 끝 - 김어진 */
-/*========= 프로필 끝 - 김어진 =========*/
+/* 작은 화면용 프로필 이미지 - 김어진 */
+/*========= 모바일 프로필 끝 - 김어진 =========*/
 
 /*========= 작은 모바일 욜로 카드 시작 - 조영서 =========*/
 /* feature/youngseo: 360px 이하에서 날짜와 버튼이 겹치지 않도록 분리 */
