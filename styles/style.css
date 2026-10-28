@@ -726,6 +726,7 @@ body {
 /*========= 프로필 선택 화면 시작 - 김어진 =========*/
 .profile-main {
   display: flex;
+  white-space: nowrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -756,13 +757,22 @@ body {
 
 /* 프로필 선택 리스트 시작 - 김어진 */
 .profile-selection {
-  margin: 56px auto;
+  margin: 36px auto;
 }
 
 .profile-list {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 40px;
+}
+
+.profile-card {
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-card:hover {
+  background-color: #1a1c1f;
+  border-radius: 10px;
 }
 
 .image-profile {
@@ -1163,18 +1173,18 @@ footer {
 /* ==== 모바일 파트 메인 히어로 끝 - 박혜정 ==== */
 
 /*========= 프로필 시작 - 김어진 =========*/
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767.5px) {
   .profile-main {
     padding: 56px 24px;
   }
 
   .profile-selection {
-    margin: 40px auto;
+    margin: 20px auto;
   }
 
   .profile-list {
     grid-template-columns: auto auto;
-    gap: 28px 32px;
+    gap: 8px 12px;
   }
 }
 /*========= 프로필 끝 - 김어진 =========*/
