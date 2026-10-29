@@ -756,14 +756,22 @@ body {
   grid-template-columns: repeat(4, auto);
 }
 
+.profile-card a:focus-visible {
+  outline: none;
+}
+
 .profile-card {
   padding: 20px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 .profile-card:hover {
   background-color: #1a1c1f;
-  border-radius: 10px;
+}
+
+.profile-card:focus-within {
+  outline: 2px solid #f28d77;
 }
 
 .image-profile {
@@ -1226,7 +1234,6 @@ body {
   }
 
   .profile-list {
-    grid-template-columns: 1fr 1fr;
     gap: 0px;
   }
   .image-profile {
