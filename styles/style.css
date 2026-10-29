@@ -324,7 +324,7 @@ body {
 }
 
 .content-card + .content-card {
-  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .content-card__header {
@@ -1041,7 +1041,7 @@ body {
 /* =====메인 콘텐츠 카드, 찜한 콘텐츠 ===== */
 @media (min-width: 768px) {
   .content-card {
-    padding: 16px 64px;
+    padding: 48px 64px;
   }
 
   .content-card__title {
@@ -1083,10 +1083,9 @@ body {
 @media (hover: hover) {
   .movie-card a:hover img {
     filter: brightness(1.15);
-
-    .movie-card a:hover .movie-card__title {
-      color: #f28d77;
-    }
+  }
+  .movie-card a:hover .movie-card__title {
+    color: #f28d77;
   }
 }
 
