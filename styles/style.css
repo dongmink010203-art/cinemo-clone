@@ -24,28 +24,30 @@ body {
   padding: 24px 64px;
 }
 
-.site-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.site-brand {
   flex-shrink: 0;
-  color: #f3f1ed;
-  font-size: 24px;
-  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+
+.site-logo {
+  display: block;
   text-decoration: none;
 }
 
-.site-logo-mark {
-  width: 6px;
+.site-logo svg {
+  display: block;
+  width: 112px;
   height: 22px;
-  background-color: #f28d77;
 }
 
-.site-nav {
+.site-nav-list {
   display: flex;
   align-items: center;
   gap: 32px;
-  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .site-nav-link {
@@ -79,11 +81,19 @@ body {
 }
 
 .site-profile-avatar {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  object-fit: cover;
+  background: url("../assets/images/profile-yolo-bg.svg") center / contain
+    no-repeat;
+  color: #f3f1ed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .site-header a:focus-visible {
@@ -520,13 +530,19 @@ input[type="checkbox"]:checked + label {
 }
 
 .mypage-profile-avatar {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   width: 88px;
   height: 88px;
   border-radius: 8px;
-  object-fit: cover;
-  background-color: #789599;
+  background: url("../assets/images/profile-yolo-bg.svg") center / contain
+    no-repeat;
+  color: #f3f1ed;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .mypage-profile-info {
@@ -562,6 +578,10 @@ input[type="checkbox"]:checked + label {
   line-height: 1.5;
 }
 
+.mypage-profile-date-mobile {
+  display: none;
+}
+
 .mypage-profile-link {
   display: inline-flex;
   align-items: center;
@@ -578,9 +598,11 @@ input[type="checkbox"]:checked + label {
   text-decoration: none;
 }
 
-.mypage-profile-link img {
+.mypage-profile-icon {
   display: block;
   flex-shrink: 0;
+  width: 16px;
+  height: 16px;
 }
 
 .mypage-profile-link:hover {
@@ -915,12 +937,12 @@ input[type="checkbox"]:checked + label {
 
 /*========================== 미디어 쿼리 ==========================*/
 
-@media (min-width: 768px) and (max-width: var(--max-width)) {
+@media (min-width: 768px) and (max-width: 1312px) {
   .site-header-inner {
     gap: 16px;
   }
 
-  .site-nav {
+  .site-nav-list {
     gap: 16px;
   }
 }
@@ -938,24 +960,23 @@ input[type="checkbox"]:checked + label {
     padding: 24px;
   }
 
-  .site-logo {
-    font-size: 20px;
+  .site-logo svg {
+    width: 100px;
+    height: auto;
   }
 
-  .site-logo-mark {
-    width: 5px;
-    height: 18px;
-  }
-
-  .site-profile > span {
+  .site-profile-text {
     display: none;
   }
 
   .site-nav {
     order: 3;
     width: 100%;
-    gap: 24px;
     margin-top: 24px;
+  }
+
+  .site-nav-list {
+    gap: 24px;
   }
 
   .site-nav-link {
@@ -1012,6 +1033,7 @@ input[type="checkbox"]:checked + label {
   .mypage-profile-avatar {
     width: 64px;
     height: 64px;
+    font-size: 32px;
   }
 
   .mypage-profile-name {
@@ -1043,6 +1065,18 @@ input[type="checkbox"]:checked + label {
     padding: 10px 14px;
     font-size: 12px;
     white-space: nowrap;
+  }
+
+  .mypage-profile-date-pc {
+    display: none;
+  }
+
+  .mypage-profile-date-mobile {
+    display: inline;
+  }
+
+  .mypage-profile-icon {
+    display: none;
   }
   /* 모바일 욜로 프로필 끝 - 조영서 */
 }
@@ -1095,6 +1129,7 @@ input[type="checkbox"]:checked + label {
   .movie-card a:hover img {
     filter: brightness(1.15);
   }
+
   .movie-card a:hover .movie-card__title {
     color: #f28d77;
   }
@@ -1246,6 +1281,7 @@ input[type="checkbox"]:checked + label {
   .profile-list {
     gap: 0px;
   }
+
   .image-profile {
     width: 130px;
     height: 130px;
@@ -1278,15 +1314,3 @@ input[type="checkbox"]:checked + label {
 }
 /* 작은 화면용 프로필 이미지 - 김어진 */
 /*========= 모바일 프로필 끝 - 김어진 =========*/
-
-/*========= 작은 모바일 욜로 카드 시작 - 조영서 =========*/
-@media (max-width: 360px) {
-  .mypage-profile {
-    padding-bottom: 112px;
-  }
-
-  .mypage-profile-date {
-    bottom: 80px;
-  }
-}
-/*========= 작은 모바일 욜로 카드 끝 - 조영서 =========*/
