@@ -772,6 +772,8 @@ body {
 
 .profile-card:focus-within {
   outline: 2px solid #f28d77;
+  border-radius: 10px;
+  z-index: 1;
 }
 
 .image-profile {
