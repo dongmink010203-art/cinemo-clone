@@ -1186,11 +1186,7 @@ body {
   }
 
   .main-hero__caption {
-    right: 24px;
-    bottom: 32px;
-    left: 24px;
-    font-size: 12px;
-    text-align: left;
+    display: none;
   }
 }
 /* ==== 모바일 파트 메인 히어로 끝 - 박혜정 ==== */
