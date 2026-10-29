@@ -829,6 +829,7 @@ body {
   left: 118px;
   background-color: #24272d;
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .profile-initials {
@@ -897,6 +898,7 @@ body {
   color: #7e8289;
   font-size: 11px;
   text-align: center;
+  padding-bottom: 75px;
 }
 /* 프로필 푸터 끝 - 김어진 */
 /*========= 프로필 선택 화면 끝 - 김어진 =========*/
@@ -1206,6 +1208,10 @@ body {
 
   .profile-card {
     padding: 10px;
+  }
+
+  .profile-footer {
+    padding-bottom: 50px;
   }
 }
 /* 작은 화면용 프로필 이미지 - 김어진 */
