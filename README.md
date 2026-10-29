@@ -35,21 +35,21 @@
 ```text
 cinemo-clone
 ├── assets
-│   ├── images webp
-│   └── README.md
+│   └── images webp
 ├── styles
 │   ├── reset.css
 │   └── style.css
 ├── index.html
 ├── mypage.html
-└── profile.html
+├── profile.html
+└── README.md
 ```
 
 ## 4. 페이지 구성
 
-- <img src="./images/main.png">
-- <img src="./images/mypage.png">
-- <img src="./images/profile.png">
+- <img src="./assets/images/main.png">
+- <img src="./assets/images/mypage.png">
+- <img src="./assets/images/profile.png">
 
 ## 5. 실행 방법
 
