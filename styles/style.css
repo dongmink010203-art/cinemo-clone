@@ -196,7 +196,7 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1184px;
   margin: 0 auto;
 }
 
